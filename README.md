@@ -25,7 +25,7 @@ Projeto de portfólio com foco em front-end, desenvolvido para demonstrar:
   - Positioning e efeitos visuais
 
 ## 📷 Preview
-![preview](./assets/preview.png)
+![preview](./img/preview.png)
 
 ## 🔗 Acesso
 https://atlas-olfativo.vercel.app/
