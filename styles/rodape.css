@@ -1,0 +1,44 @@
+.rodape {
+    background-color: var(--preto);
+    color: var(--cinza-frio);
+    text-align: center;
+    padding: 2rem 1rem; 
+}
+
+.rodape__texto {
+    font-size: 0.75rem; 
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.rodape__botao{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    
+    .rodape{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 3.5rem;
+    }
+
+    .rodape__texto{
+        font-size: 0.85rem;
+        color: var(--cinza-frio);
+    }
+
+    .rodape__botao{
+        display: block;
+        text-decoration: none;
+        color: var(--cinza-frio);
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+    }
+
+    .rodape__botao:hover{
+        color: var(--branco-quente);
+    }
+}

@@ -1,0 +1,148 @@
+.g__container{
+    padding: 4rem 1.5rem;
+    background-color: var(--branco);
+}
+
+.g__item{
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.g__item:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.g__titulo{
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    color: var(--preto);
+}
+
+.g__subtitulo{
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+}
+
+.g__lista-dados{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.g__dado{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.g__dado dt{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    opacity: 0.4;
+}
+
+.g__dado dd{
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--preto);
+}
+
+.g__caracteristicas{
+    margin-bottom: 3rem;
+}
+
+.g__lista-marcadores{
+    list-style: none;
+    padding: 0;
+}
+
+.g__lista-marcadores li{
+    font-size: 1.05rem;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 1.2rem;
+    color: var(--preto);
+    opacity: 0.9;
+}
+
+.g__lista-marcadores li::before{
+    content: "—"; 
+    position: absolute;
+    left: 0;
+    opacity: 0.3;
+}
+
+
+.g__criterio{
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 1.5rem;
+    border-left: 2px solid var(--preto);
+}
+
+.g__criterio p{
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--preto);
+}
+
+.g__criterio strong{
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1024px){
+
+    .g__container{
+        padding: 8rem 10%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .g__item {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        gap: 5rem;
+        padding-bottom: 5rem;
+        margin-bottom: 5rem;
+        align-items: start;
+    }
+
+    .g__titulo {
+        font-size: 2.2rem;
+        margin-bottom: 0;
+        position: sticky;
+        top: 8rem; 
+    }
+
+    .g__lista-dados {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .g__caracteristicas {
+        margin-bottom: 4rem;
+    }
+
+    .g__criterio {
+        padding: 2rem;
+    }
+    
+    .g__criterio p {
+        font-size: 1.05rem;
+    }
+
+}

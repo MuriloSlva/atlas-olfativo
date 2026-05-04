@@ -1,0 +1,38 @@
+@import url("styles/cabecalho.css");
+@import url("styles/hero.css");
+@import url("styles/preview.css");
+@import url("styles/preview2.css");
+@import url("styles/preview3.css");
+@import url("styles/contato.css");
+@import url("styles/rodape.css");
+@import url("styles/fundamentos.css");
+@import url("styles/fund-container.css");
+@import url("styles/continue.css");
+@import url("styles/familias.css");
+@import url("styles/fam-container.css");
+@import url("styles/guia.css");
+@import url("styles/g-container.css");
+
+:root{
+    --branco: #ffffff;
+    --branco-quente: #F7F5F2;
+    --cinza-claro: #EAE7E2;
+    --preto: #1C1C1C;
+    --cinza-medio: #6F6F6F;
+    --cinza-frio: #A8A8A8;
+    --fonte-principal: "Inter";
+    --fonte-titulo: "Playfair Display"
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--preto);
+    font-family: var(--fonte-principal);
+}
+
+strong{
+    font-weight: 500;
+}

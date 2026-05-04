@@ -1,0 +1,74 @@
+.preview3{
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/homem-andando.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.preview3__titulo{
+    color: var(--branco);
+    font-family: var(--fonte-titulo);
+    font-size: 2.2rem; 
+    font-weight: 700; 
+    letter-spacing: 1px; 
+    line-height: 1.1;
+    padding: 2.4rem 1em 0 1em;
+}
+
+.preview3__texto{
+    color: var(--branco);
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    opacity: 0.85;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2.4rem 1em 2.4rem 1em;
+}
+
+.preview3__botao{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--preto);
+    background-color: var(--branco-quente);
+    padding: 0.6em 2.5em;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: 1px solid var(--branco-quente);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media screen and (min-width: 1024px){
+    
+    .preview3__titulo{
+        font-size: 4rem; 
+        font-weight: 700;
+        letter-spacing: 2px; 
+        padding: 3rem 1em 0 1em;
+    }
+
+    .preview3__texto{
+        font-size: 1.25rem;
+        font-weight: 300;
+        max-width: 650px; 
+        padding: 2rem 1em 2rem 1em;
+        line-height: 1.6;
+    }
+
+    .preview3__botao{
+        padding: 0.8em 3.5em;;
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+    }
+
+    .preview3__botao:hover{
+        background-color: transparent;
+        color: var(--branco);
+        border: 1px solid var(--branco-quente);
+    }
+}

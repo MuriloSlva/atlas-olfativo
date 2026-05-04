@@ -1,0 +1,113 @@
+.preview2{
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    background-color: var(--preto);
+}
+
+.preview2__titulo{
+    color: var(--branco);
+    font-family: var(--fonte-titulo);
+    font-size: 2.4rem; 
+    font-weight: 700; 
+    letter-spacing: 1px; 
+    line-height: 1.1;
+    padding: 2.2rem 1em 0 1em;
+}
+
+.preview2__texto{
+    color: var(--branco);
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    opacity: 0.85;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2.4rem 1.3em 2.4rem 1.3em;
+}
+
+.preview2__botao{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--preto);
+    background-color: var(--branco-quente);
+    padding: 0.6em 2.5em;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: 1px solid var(--branco-quente);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.preview2__moldura{
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.preview2__imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+@media screen and (min-width: 1024px){
+    
+    .preview2__titulo{
+        font-size: 4rem; 
+        font-weight: 700;
+        letter-spacing: 2px; 
+        padding: 3rem 1em 0 1em;
+    }
+
+    .preview2__texto{
+        font-size: 1.25rem;
+        font-weight: 300;
+        max-width: 650px; 
+        padding: 2rem 1em 2rem 1em;
+        line-height: 1.6;
+    }
+
+    .preview2__botao{
+        padding: 0.8em 3.5em;;
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+    }
+
+    .preview2__botao:hover{
+        background-color: transparent;
+        color: var(--branco);
+        border: 1px solid var(--branco-quente);
+    }
+
+    .preview2__titulo, .preview2__texto, .preview2__botao {
+        position: relative;
+        z-index: 2;
+    }
+
+    .preview2__moldura{
+        height: 100vh;
+        z-index: 1;
+    }
+
+    .preview2__imagem{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(40%);
+    }
+}    
